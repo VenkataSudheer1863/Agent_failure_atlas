@@ -1,0 +1,31 @@
+# DeepSeek-R1-8B Local Model Configuration
+# Run via Ollama: ollama pull deepseek-r1:8b
+
+model_name: "DeepSeek-R1-8B"
+paper_name: "DeepSeek-R1-Distill-Qwen-8B"
+ollama_model: "deepseek-r1:8b"
+backend: "ollama"
+base_url: "http://localhost:11434"
+
+# Generation settings
+temperature: 0.0
+max_tokens: 4096
+seed: 42
+timeout_seconds: 180
+
+# Hardware requirements
+min_vram_gb: 6
+min_ram_gb: 8
+disk_space_gb: 5.0
+
+# Source
+hf_repo: "deepseek-ai/DeepSeek-R1-Distill-Qwen-8B"
+hf_url: "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-8B"
+ollama_url: "https://ollama.com/library/deepseek-r1"
+
+# Notes
+notes: >
+  DeepSeek-R1-8B is a chain-of-thought distilled model that produces
+  explicit reasoning steps in <think>...</think> blocks before answering.
+  Set max_tokens higher to allow complete reasoning chains.
+  Particularly strong on mathematical and logical reasoning tasks.

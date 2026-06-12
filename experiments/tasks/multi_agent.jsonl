@@ -1,0 +1,50 @@
+{"id": "MULT-001", "task_type": "multi_agent", "prompt": "Coordinate a research agent and a writing agent to produce a 500-word article on quantum computing trends.", "difficulty": "easy"}
+{"id": "MULT-002", "task_type": "multi_agent", "prompt": "Orchestrate a data collection agent, analysis agent, and reporting agent to analyze user churn data.", "difficulty": "easy"}
+{"id": "MULT-003", "task_type": "multi_agent", "prompt": "Coordinate a code generation agent, code review agent, and testing agent to implement a bubble sort function.", "difficulty": "hard"}
+{"id": "MULT-004", "task_type": "multi_agent", "prompt": "Orchestrate three agents to debate the pros and cons of nuclear energy and reach a consensus.", "difficulty": "easy"}
+{"id": "MULT-005", "task_type": "multi_agent", "prompt": "Coordinate a planning agent and execution agent to plan and simulate deploying a web application.", "difficulty": "easy"}
+{"id": "MULT-006", "task_type": "multi_agent", "prompt": "Orchestrate agents to collectively fact-check a news article: one agent per claim.", "difficulty": "hard"}
+{"id": "MULT-007", "task_type": "multi_agent", "prompt": "Coordinate a research agent and summarization agent to produce an executive brief on climate policy.", "difficulty": "medium"}
+{"id": "MULT-008", "task_type": "multi_agent", "prompt": "Orchestrate a translator agent, proofreader agent, and formatter agent to translate a technical document.", "difficulty": "easy"}
+{"id": "MULT-009", "task_type": "multi_agent", "prompt": "Coordinate an orchestrator agent with two worker agents to complete a task decomposed into parallel subtasks.", "difficulty": "hard"}
+{"id": "MULT-010", "task_type": "multi_agent", "prompt": "Orchestrate three agents with different expertise (medical, legal, financial) to give holistic advice on a scenario.", "difficulty": "easy"}
+{"id": "MULT-011", "task_type": "multi_agent", "prompt": "Coordinate a data cleaning agent and visualization agent to process and chart a dataset.", "difficulty": "easy"}
+{"id": "MULT-012", "task_type": "multi_agent", "prompt": "Orchestrate a specification agent, implementation agent, and documentation agent for a software feature.", "difficulty": "hard"}
+{"id": "MULT-013", "task_type": "multi_agent", "prompt": "Coordinate agents to run a structured literature review: one agent per paper section.", "difficulty": "medium"}
+{"id": "MULT-014", "task_type": "multi_agent", "prompt": "Orchestrate a debate between two agents: one argues for AI regulation, one against.", "difficulty": "hard"}
+{"id": "MULT-015", "task_type": "multi_agent", "prompt": "Coordinate a requirement gathering agent and architecture design agent for a new system.", "difficulty": "easy"}
+{"id": "MULT-016", "task_type": "multi_agent", "prompt": "Orchestrate a brainstorming agent, evaluation agent, and selection agent for product name generation.", "difficulty": "medium"}
+{"id": "MULT-017", "task_type": "multi_agent", "prompt": "Coordinate a sentiment analysis agent and recommendation agent to process customer feedback.", "difficulty": "hard"}
+{"id": "MULT-018", "task_type": "multi_agent", "prompt": "Orchestrate three agents to iteratively improve a machine learning model: trainer, evaluator, tuner.", "difficulty": "hard"}
+{"id": "MULT-019", "task_type": "multi_agent", "prompt": "Coordinate a search agent and synthesis agent to answer: 'What are the latest advances in battery technology?'", "difficulty": "medium"}
+{"id": "MULT-020", "task_type": "multi_agent", "prompt": "Orchestrate agents to perform a SWOT analysis, with each agent handling one quadrant.", "difficulty": "easy"}
+{"id": "MULT-021", "task_type": "multi_agent", "prompt": "Coordinate a task decomposition agent and five specialized execution agents for a complex pipeline.", "difficulty": "hard"}
+{"id": "MULT-022", "task_type": "multi_agent", "prompt": "Orchestrate a monitoring agent and remediation agent to detect and fix a simulated system issue.", "difficulty": "hard"}
+{"id": "MULT-023", "task_type": "multi_agent", "prompt": "Coordinate a query agent and explanation agent to answer technical database questions.", "difficulty": "hard"}
+{"id": "MULT-024", "task_type": "multi_agent", "prompt": "Orchestrate two agents to collaboratively write and critique a research abstract.", "difficulty": "easy"}
+{"id": "MULT-025", "task_type": "multi_agent", "prompt": "Coordinate a risk identification agent and mitigation planning agent for a software project.", "difficulty": "hard"}
+{"id": "MULT-026", "task_type": "multi_agent", "prompt": "Orchestrate a grading agent and feedback agent to evaluate a student's essay.", "difficulty": "medium"}
+{"id": "MULT-027", "task_type": "multi_agent", "prompt": "Coordinate an interview agent and evaluation agent to assess a candidate's technical skills.", "difficulty": "medium"}
+{"id": "MULT-028", "task_type": "multi_agent", "prompt": "Orchestrate a legal research agent and contract drafting agent for a simple NDA template.", "difficulty": "hard"}
+{"id": "MULT-029", "task_type": "multi_agent", "prompt": "Coordinate agents to collectively solve a multi-step math word problem, one agent per step.", "difficulty": "hard"}
+{"id": "MULT-030", "task_type": "multi_agent", "prompt": "Orchestrate a news aggregation agent and priority ranking agent to produce a morning briefing.", "difficulty": "medium"}
+{"id": "MULT-031", "task_type": "multi_agent", "prompt": "Coordinate a competitive research agent and strategic recommendation agent for market analysis.", "difficulty": "medium"}
+{"id": "MULT-032", "task_type": "multi_agent", "prompt": "Orchestrate a code generation agent and security audit agent to build a login form.", "difficulty": "hard"}
+{"id": "MULT-033", "task_type": "multi_agent", "prompt": "Coordinate three agents to plan, execute, and review a data backup strategy.", "difficulty": "medium"}
+{"id": "MULT-034", "task_type": "multi_agent", "prompt": "Orchestrate a customer support agent and escalation agent for handling a complex complaint.", "difficulty": "easy"}
+{"id": "MULT-035", "task_type": "multi_agent", "prompt": "Coordinate a recipe generation agent and ingredient optimization agent for meal planning.", "difficulty": "easy"}
+{"id": "MULT-036", "task_type": "multi_agent", "prompt": "Orchestrate a citation agent and bias detection agent for academic fact-checking.", "difficulty": "easy"}
+{"id": "MULT-037", "task_type": "multi_agent", "prompt": "Coordinate a prediction agent and confidence calibration agent for forecasting tasks.", "difficulty": "easy"}
+{"id": "MULT-038", "task_type": "multi_agent", "prompt": "Orchestrate a goal decomposition agent and resource allocation agent for project management.", "difficulty": "medium"}
+{"id": "MULT-039", "task_type": "multi_agent", "prompt": "Coordinate a question generation agent and answer verification agent for quiz creation.", "difficulty": "easy"}
+{"id": "MULT-040", "task_type": "multi_agent", "prompt": "Orchestrate a design agent, implementation agent, and QA agent for a UI component.", "difficulty": "hard"}
+{"id": "MULT-041", "task_type": "multi_agent", "prompt": "Coordinate multiple specialized agents to produce a comprehensive market research report.", "difficulty": "hard"}
+{"id": "MULT-042", "task_type": "multi_agent", "prompt": "Orchestrate a code explanation agent and refactoring agent for improving legacy code.", "difficulty": "easy"}
+{"id": "MULT-043", "task_type": "multi_agent", "prompt": "Coordinate an anomaly detection agent and root cause analysis agent for log analysis.", "difficulty": "hard"}
+{"id": "MULT-044", "task_type": "multi_agent", "prompt": "Orchestrate a hypothesis generation agent and experimental design agent for research planning.", "difficulty": "easy"}
+{"id": "MULT-045", "task_type": "multi_agent", "prompt": "Coordinate a data labeling agent and quality control agent for building training datasets.", "difficulty": "easy"}
+{"id": "MULT-046", "task_type": "multi_agent", "prompt": "Orchestrate a meeting transcription agent and action item extraction agent.", "difficulty": "easy"}
+{"id": "MULT-047", "task_type": "multi_agent", "prompt": "Coordinate a compliance checking agent and remediation suggestion agent for policy review.", "difficulty": "hard"}
+{"id": "MULT-048", "task_type": "multi_agent", "prompt": "Orchestrate a concept explanation agent and analogy generation agent for educational content.", "difficulty": "hard"}
+{"id": "MULT-049", "task_type": "multi_agent", "prompt": "Coordinate a persona creation agent and dialogue generation agent for user testing scenarios.", "difficulty": "easy"}
+{"id": "MULT-050", "task_type": "multi_agent", "prompt": "Orchestrate a news monitoring agent and executive summary agent for daily intelligence reports.", "difficulty": "easy"}

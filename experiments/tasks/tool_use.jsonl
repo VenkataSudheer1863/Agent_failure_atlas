@@ -1,0 +1,50 @@
+{"id": "TOOL-001", "task_type": "tool_use", "prompt": "Search the web for the current population of Tokyo and report it.", "difficulty": "hard"}
+{"id": "TOOL-002", "task_type": "tool_use", "prompt": "Calculate the compound interest on $10,000 at 5% annual rate over 10 years.", "difficulty": "medium"}
+{"id": "TOOL-003", "task_type": "tool_use", "prompt": "Search for recent papers on 'chain-of-thought prompting' and summarize the top 3.", "difficulty": "easy"}
+{"id": "TOOL-004", "task_type": "tool_use", "prompt": "Use the calculator to determine how many seconds are in a leap year.", "difficulty": "hard"}
+{"id": "TOOL-005", "task_type": "tool_use", "prompt": "Look up the current price of gold per ounce and convert it to euros.", "difficulty": "medium"}
+{"id": "TOOL-006", "task_type": "tool_use", "prompt": "Search for the fastest sorting algorithm for nearly-sorted arrays and explain it.", "difficulty": "hard"}
+{"id": "TOOL-007", "task_type": "tool_use", "prompt": "Calculate the distance from New York to London using the Haversine formula.", "difficulty": "easy"}
+{"id": "TOOL-008", "task_type": "tool_use", "prompt": "Search for the top 5 programming languages by popularity in 2024.", "difficulty": "medium"}
+{"id": "TOOL-009", "task_type": "tool_use", "prompt": "Use the calculator: what is 17 raised to the power of 6?", "difficulty": "easy"}
+{"id": "TOOL-010", "task_type": "tool_use", "prompt": "Search for the current WHO recommendations for daily sugar intake.", "difficulty": "hard"}
+{"id": "TOOL-011", "task_type": "tool_use", "prompt": "Query the database for all users who signed up in the last 30 days.", "difficulty": "medium"}
+{"id": "TOOL-012", "task_type": "tool_use", "prompt": "Calculate the BMI for a person who is 175cm tall and weighs 70kg.", "difficulty": "hard"}
+{"id": "TOOL-013", "task_type": "tool_use", "prompt": "Search for the most cited papers on attention mechanisms in neural networks.", "difficulty": "hard"}
+{"id": "TOOL-014", "task_type": "tool_use", "prompt": "Use the calculator to compute the area of a regular hexagon with side length 8.", "difficulty": "medium"}
+{"id": "TOOL-015", "task_type": "tool_use", "prompt": "Search for the current exchange rate between USD and JPY.", "difficulty": "hard"}
+{"id": "TOOL-016", "task_type": "tool_use", "prompt": "Execute this code: [1,2,3,4,5].reduce((a,b)=>a+b,0) and explain the output.", "difficulty": "easy"}
+{"id": "TOOL-017", "task_type": "tool_use", "prompt": "Search for the ingredients in a classic beef bourguignon recipe.", "difficulty": "hard"}
+{"id": "TOOL-018", "task_type": "tool_use", "prompt": "Calculate how many moles are in 36g of water (H2O, molar mass = 18 g/mol).", "difficulty": "easy"}
+{"id": "TOOL-019", "task_type": "tool_use", "prompt": "Search for the top 3 fastest electric vehicles available in 2024.", "difficulty": "easy"}
+{"id": "TOOL-020", "task_type": "tool_use", "prompt": "Use the calculator to determine the monthly payment on a $300,000 mortgage at 6.5% over 30 years.", "difficulty": "hard"}
+{"id": "TOOL-021", "task_type": "tool_use", "prompt": "Search for the current unemployment rate in the European Union.", "difficulty": "easy"}
+{"id": "TOOL-022", "task_type": "tool_use", "prompt": "Calculate the number of possible combinations for a 6-digit PIN code.", "difficulty": "medium"}
+{"id": "TOOL-023", "task_type": "tool_use", "prompt": "Search for recent news about AI regulation in the European Union.", "difficulty": "easy"}
+{"id": "TOOL-024", "task_type": "tool_use", "prompt": "Execute code to sort this list: [5,3,8,1,9,2,7,4,6].", "difficulty": "easy"}
+{"id": "TOOL-025", "task_type": "tool_use", "prompt": "Search for the definition and examples of 'cognitive dissonance'.", "difficulty": "easy"}
+{"id": "TOOL-026", "task_type": "tool_use", "prompt": "Calculate the volume of a sphere with radius 7 cm.", "difficulty": "medium"}
+{"id": "TOOL-027", "task_type": "tool_use", "prompt": "Look up the boiling point of ethanol at standard atmospheric pressure.", "difficulty": "medium"}
+{"id": "TOOL-028", "task_type": "tool_use", "prompt": "Use the API to get the weather forecast for London for the next 3 days.", "difficulty": "medium"}
+{"id": "TOOL-029", "task_type": "tool_use", "prompt": "Calculate the entropy of a fair six-sided die.", "difficulty": "hard"}
+{"id": "TOOL-030", "task_type": "tool_use", "prompt": "Search for the IUPAC name of the molecule with structure CH3-CH2-OH.", "difficulty": "medium"}
+{"id": "TOOL-031", "task_type": "tool_use", "prompt": "Query the database for the top 10 customers by total order value.", "difficulty": "easy"}
+{"id": "TOOL-032", "task_type": "tool_use", "prompt": "Calculate 15% compound annual growth rate applied to $50,000 over 8 years.", "difficulty": "medium"}
+{"id": "TOOL-033", "task_type": "tool_use", "prompt": "Search for papers on 'retrieval augmented generation' published in 2024.", "difficulty": "medium"}
+{"id": "TOOL-034", "task_type": "tool_use", "prompt": "Execute code to generate the first 20 Fibonacci numbers.", "difficulty": "easy"}
+{"id": "TOOL-035", "task_type": "tool_use", "prompt": "Search for the melting points of the top 5 metals used in aerospace.", "difficulty": "hard"}
+{"id": "TOOL-036", "task_type": "tool_use", "prompt": "Use the calculator: if a train travels 450km at 90km/h, how long does the journey take?", "difficulty": "medium"}
+{"id": "TOOL-037", "task_type": "tool_use", "prompt": "Search for the current number of ChatGPT users worldwide.", "difficulty": "hard"}
+{"id": "TOOL-038", "task_type": "tool_use", "prompt": "Query the database for average transaction values by product category.", "difficulty": "hard"}
+{"id": "TOOL-039", "task_type": "tool_use", "prompt": "Calculate how many 5-card hands are possible from a standard 52-card deck.", "difficulty": "hard"}
+{"id": "TOOL-040", "task_type": "tool_use", "prompt": "Search for the key differences between REST and GraphQL APIs.", "difficulty": "easy"}
+{"id": "TOOL-041", "task_type": "tool_use", "prompt": "Use the API to convert 100 USD to GBP at the current exchange rate.", "difficulty": "hard"}
+{"id": "TOOL-042", "task_type": "tool_use", "prompt": "Execute code to check if 97 is a prime number.", "difficulty": "hard"}
+{"id": "TOOL-043", "task_type": "tool_use", "prompt": "Search for the recommended daily intake of vitamin D for adults.", "difficulty": "easy"}
+{"id": "TOOL-044", "task_type": "tool_use", "prompt": "Calculate the escape velocity from Earth's surface (g=9.8, R=6371km).", "difficulty": "hard"}
+{"id": "TOOL-045", "task_type": "tool_use", "prompt": "Query the database for all orders with status 'pending' older than 7 days.", "difficulty": "hard"}
+{"id": "TOOL-046", "task_type": "tool_use", "prompt": "Search for the main programming paradigms and give an example language for each.", "difficulty": "easy"}
+{"id": "TOOL-047", "task_type": "tool_use", "prompt": "Use the calculator to find the standard deviation of [2, 4, 4, 4, 5, 5, 7, 9].", "difficulty": "easy"}
+{"id": "TOOL-048", "task_type": "tool_use", "prompt": "Search for the current state of humanoid robotics research.", "difficulty": "medium"}
+{"id": "TOOL-049", "task_type": "tool_use", "prompt": "Calculate the present value of $100,000 to be received in 10 years at 4% discount rate.", "difficulty": "medium"}
+{"id": "TOOL-050", "task_type": "tool_use", "prompt": "Execute code to reverse a string: 'Hello, World!'", "difficulty": "medium"}

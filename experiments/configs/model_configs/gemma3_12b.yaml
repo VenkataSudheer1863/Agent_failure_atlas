@@ -1,0 +1,30 @@
+# Gemma3-12B Local Model Configuration
+# Run via Ollama: ollama pull gemma3:12b
+
+model_name: "Gemma3-12B"
+paper_name: "Gemma 3 12B Instruct"
+ollama_model: "gemma3:12b"
+backend: "ollama"
+base_url: "http://localhost:11434"
+
+# Generation settings
+temperature: 0.0
+max_tokens: 2048
+seed: 42
+timeout_seconds: 150
+
+# Hardware requirements
+min_vram_gb: 10
+min_ram_gb: 12
+disk_space_gb: 8.1
+
+# Source
+hf_repo: "google/gemma-3-12b-it"
+hf_url: "https://huggingface.co/google/gemma-3-12b-it"
+ollama_url: "https://ollama.com/library/gemma3"
+
+# Notes
+notes: >
+  Gemma 3 12B is Google's open-source instruction-tuned model.
+  Strong on coding, reasoning, and factual tasks.
+  License: Gemma Terms of Use (commercial use allowed with restrictions).

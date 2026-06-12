@@ -1,0 +1,415 @@
+{
+  "taxonomy_version": "1.0.0",
+  "name": "Agent Failure Atlas Taxonomy",
+  "description": "A structured classification system for failure modes in autonomous AI agents",
+  "categories": [
+    {
+      "id": "PLAN",
+      "name": "Planning",
+      "description": "Failures that occur during the agent's planning phase, where the agent must decompose a goal into actionable steps.",
+      "subcategories": [
+        {
+          "code": "PLAN-MS",
+          "name": "Missing Steps",
+          "description": "The agent's plan omits one or more necessary steps to achieve the goal.",
+          "examples": [
+            "Agent plans to deploy code but skips the testing step.",
+            "Agent plans to send an email but forgets to retrieve the recipient address first."
+          ],
+          "severity_range": [1, 4],
+          "recoverable": true
+        },
+        {
+          "code": "PLAN-WO",
+          "name": "Wrong Ordering",
+          "description": "The agent produces a plan with steps in an incorrect or illogical order.",
+          "examples": [
+            "Agent tries to save data before opening the file.",
+            "Agent attempts to query a database before establishing a connection."
+          ],
+          "severity_range": [1, 3],
+          "recoverable": true
+        },
+        {
+          "code": "PLAN-PL",
+          "name": "Planning Loops",
+          "description": "The agent enters a cycle where it repeatedly re-plans without making progress.",
+          "examples": [
+            "Agent continuously reformulates a plan without executing any steps.",
+            "Agent replans after detecting an error but produces the same faulty plan."
+          ],
+          "severity_range": [2, 5],
+          "recoverable": false
+        },
+        {
+          "code": "PLAN-RP",
+          "name": "Redundant Plans",
+          "description": "The agent creates plans with unnecessary or duplicate steps that waste resources.",
+          "examples": [
+            "Agent plans to search for the same information three times.",
+            "Agent includes an already-completed step in a revised plan."
+          ],
+          "severity_range": [1, 2],
+          "recoverable": true
+        }
+      ]
+    },
+    {
+      "id": "REAS",
+      "name": "Reasoning",
+      "description": "Failures in the agent's reasoning processes, including logical inference, factual accuracy, and argumentation.",
+      "subcategories": [
+        {
+          "code": "REAS-HA",
+          "name": "Hallucination",
+          "description": "The agent confidently states facts, URLs, citations, or data that are fabricated or incorrect.",
+          "examples": [
+            "Agent cites a non-existent research paper as supporting evidence.",
+            "Agent provides a made-up API endpoint that returns an error."
+          ],
+          "severity_range": [2, 5],
+          "recoverable": false
+        },
+        {
+          "code": "REAS-CO",
+          "name": "Contradiction",
+          "description": "The agent produces outputs that are internally inconsistent or contradict prior reasoning steps.",
+          "examples": [
+            "Agent states X is true in step 2 and X is false in step 5.",
+            "Agent recommends both action A and its negation within the same plan."
+          ],
+          "severity_range": [2, 4],
+          "recoverable": true
+        },
+        {
+          "code": "REAS-II",
+          "name": "Invalid Inference",
+          "description": "The agent draws logical conclusions that do not follow from the provided premises.",
+          "examples": [
+            "Agent concludes that a task is complete because no errors were reported, ignoring that the tool output was empty.",
+            "Agent infers a user wants to delete files because they asked to 'clean up' the project."
+          ],
+          "severity_range": [2, 5],
+          "recoverable": false
+        },
+        {
+          "code": "REAS-UC",
+          "name": "Unsupported Conclusions",
+          "description": "The agent draws conclusions without sufficient supporting evidence from the available context.",
+          "examples": [
+            "Agent concludes a user is an expert based on a single message.",
+            "Agent determines the best solution without exploring alternatives."
+          ],
+          "severity_range": [1, 3],
+          "recoverable": true
+        }
+      ]
+    },
+    {
+      "id": "TOOL",
+      "name": "Tool Use",
+      "description": "Failures related to the agent's selection and use of external tools, APIs, calculators, databases, and search engines.",
+      "subcategories": [
+        {
+          "code": "TOOL-WT",
+          "name": "Wrong Tool Selection",
+          "description": "The agent selects an inappropriate tool for the task at hand.",
+          "examples": [
+            "Agent uses a web search tool to perform arithmetic.",
+            "Agent calls a database query tool when the data is already in context."
+          ],
+          "severity_range": [1, 3],
+          "recoverable": true
+        },
+        {
+          "code": "TOOL-PE",
+          "name": "Parameter Errors",
+          "description": "The agent calls a tool with incorrect, missing, or malformed parameters.",
+          "examples": [
+            "Agent passes a string where an integer is expected.",
+            "Agent omits a required field in an API call."
+          ],
+          "severity_range": [1, 4],
+          "recoverable": true
+        },
+        {
+          "code": "TOOL-AM",
+          "name": "API Misuse",
+          "description": "The agent misuses an API by violating its expected usage patterns, rate limits, or authentication requirements.",
+          "examples": [
+            "Agent repeatedly calls an API in a loop, exceeding rate limits.",
+            "Agent uses an unauthenticated endpoint for sensitive data."
+          ],
+          "severity_range": [2, 5],
+          "recoverable": false
+        },
+        {
+          "code": "TOOL-PF",
+          "name": "Parsing Failures",
+          "description": "The agent fails to correctly parse or interpret the output returned by a tool.",
+          "examples": [
+            "Agent reads a JSON response as plain text and proceeds with garbled data.",
+            "Agent ignores an error field in an API response and treats the call as successful."
+          ],
+          "severity_range": [2, 4],
+          "recoverable": true
+        }
+      ]
+    },
+    {
+      "id": "MEM",
+      "name": "Memory",
+      "description": "Failures related to the agent's management of its context window, working memory, and long-term state.",
+      "subcategories": [
+        {
+          "code": "MEM-CL",
+          "name": "Context Loss",
+          "description": "The agent loses critical information that was present earlier in the trajectory due to context window limitations or poor retrieval.",
+          "examples": [
+            "Agent forgets the user's stated constraints after many reasoning steps.",
+            "Agent re-fetches information it already retrieved earlier."
+          ],
+          "severity_range": [2, 4],
+          "recoverable": true
+        },
+        {
+          "code": "MEM-GF",
+          "name": "Goal Forgetting",
+          "description": "The agent loses track of its primary goal and pursues subsidiary tasks or tangents.",
+          "examples": [
+            "Agent starts researching a subtopic and never returns to the main task.",
+            "Agent completes a helper function but forgets to integrate it into the main solution."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        },
+        {
+          "code": "MEM-SC",
+          "name": "State Corruption",
+          "description": "The agent's internal state representation becomes inconsistent or incorrect, leading to wrong actions.",
+          "examples": [
+            "Agent tracks the wrong file as the 'current working file'.",
+            "Agent has an outdated model of the environment's state."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        },
+        {
+          "code": "MEM-MH",
+          "name": "Memory Hallucination",
+          "description": "The agent falsely recalls information as being present in its context or memory when it was never provided.",
+          "examples": [
+            "Agent claims the user said X when no such statement was made.",
+            "Agent 'recalls' retrieving data that was never fetched."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        }
+      ]
+    },
+    {
+      "id": "EXEC",
+      "name": "Execution",
+      "description": "Failures in the agent's execution of planned actions, including loops, premature stops, and abandonment.",
+      "subcategories": [
+        {
+          "code": "EXEC-IL",
+          "name": "Infinite Loops",
+          "description": "The agent enters an execution loop, repeatedly performing the same action without progress.",
+          "examples": [
+            "Agent repeatedly calls a failing tool without handling the error.",
+            "Agent alternates between two states indefinitely."
+          ],
+          "severity_range": [4, 5],
+          "recoverable": false
+        },
+        {
+          "code": "EXEC-PT",
+          "name": "Premature Termination",
+          "description": "The agent stops execution before the task is complete.",
+          "examples": [
+            "Agent reports task done after completing only the first subtask.",
+            "Agent stops upon encountering a minor error without attempting recovery."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        },
+        {
+          "code": "EXEC-RA",
+          "name": "Repeated Actions",
+          "description": "The agent performs the same action multiple times unnecessarily.",
+          "examples": [
+            "Agent searches for the same query three times.",
+            "Agent appends the same content to a file repeatedly."
+          ],
+          "severity_range": [1, 3],
+          "recoverable": true
+        },
+        {
+          "code": "EXEC-TA",
+          "name": "Task Abandonment",
+          "description": "The agent explicitly or implicitly abandons a task without completing it or explaining why.",
+          "examples": [
+            "Agent stops mid-task with no error message.",
+            "Agent says 'I cannot complete this' without attempting a solution."
+          ],
+          "severity_range": [4, 5],
+          "recoverable": false
+        }
+      ]
+    },
+    {
+      "id": "COOR",
+      "name": "Coordination",
+      "description": "Failures in multi-agent settings where agents must communicate, divide labor, and avoid conflicts.",
+      "subcategories": [
+        {
+          "code": "COOR-CB",
+          "name": "Communication Breakdown",
+          "description": "Agents fail to communicate necessary information to each other, resulting in incomplete or duplicate work.",
+          "examples": [
+            "Agent A completes a subtask but does not notify Agent B, which redoes the work.",
+            "An orchestrator fails to relay updated instructions to subagents."
+          ],
+          "severity_range": [2, 4],
+          "recoverable": true
+        },
+        {
+          "code": "COOR-RC",
+          "name": "Role Confusion",
+          "description": "An agent performs actions outside its designated role or scope.",
+          "examples": [
+            "A summarization agent begins executing code without authorization.",
+            "A research agent starts writing the final report instead of passing findings to the writing agent."
+          ],
+          "severity_range": [2, 4],
+          "recoverable": true
+        },
+        {
+          "code": "COOR-DL",
+          "name": "Deadlocks",
+          "description": "Two or more agents are blocked waiting on each other, causing a system-wide halt.",
+          "examples": [
+            "Agent A waits for Agent B's output while Agent B waits for Agent A's approval.",
+            "Both agents hold a shared resource and refuse to release it."
+          ],
+          "severity_range": [4, 5],
+          "recoverable": false
+        },
+        {
+          "code": "COOR-CF",
+          "name": "Conflicts",
+          "description": "Multiple agents take contradictory actions on shared state.",
+          "examples": [
+            "Two agents simultaneously overwrite the same file with different content.",
+            "Two agents send contradictory responses to the user."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        }
+      ]
+    },
+    {
+      "id": "SAFE",
+      "name": "Safety",
+      "description": "Failures involving harmful, unauthorized, or policy-violating behaviors.",
+      "subcategories": [
+        {
+          "code": "SAFE-PI",
+          "name": "Prompt Injection",
+          "description": "The agent is manipulated by malicious content in the environment to perform unintended actions.",
+          "examples": [
+            "A webpage contains instructions that redirect the agent to exfiltrate data.",
+            "An email body contains hidden instructions that override agent behavior."
+          ],
+          "severity_range": [4, 5],
+          "recoverable": false
+        },
+        {
+          "code": "SAFE-UA",
+          "name": "Unsafe Actions",
+          "description": "The agent takes actions that could cause harm to users, systems, or data.",
+          "examples": [
+            "Agent deletes files without user confirmation.",
+            "Agent attempts to access a restricted system resource."
+          ],
+          "severity_range": [4, 5],
+          "recoverable": false
+        },
+        {
+          "code": "SAFE-DL",
+          "name": "Data Leakage",
+          "description": "The agent exposes sensitive or private information to unauthorized parties.",
+          "examples": [
+            "Agent includes user's API key in a public output.",
+            "Agent logs sensitive query data to an insecure location."
+          ],
+          "severity_range": [4, 5],
+          "recoverable": false
+        },
+        {
+          "code": "SAFE-PV",
+          "name": "Policy Violations",
+          "description": "The agent violates explicitly defined usage policies or ethical guidelines.",
+          "examples": [
+            "Agent generates prohibited content despite system-level restrictions.",
+            "Agent bypasses a content filter to fulfill a request."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        }
+      ]
+    },
+    {
+      "id": "ALIG",
+      "name": "Alignment",
+      "description": "Failures where the agent pursues objectives that diverge from the user's or system's true intent.",
+      "subcategories": [
+        {
+          "code": "ALIG-GD",
+          "name": "Goal Drift",
+          "description": "The agent's behavior gradually shifts away from the original objective over multiple steps.",
+          "examples": [
+            "Agent tasked with summarizing a document starts critiquing the author's writing style.",
+            "Agent optimizing for task completion starts gaming metrics instead of solving the problem."
+          ],
+          "severity_range": [2, 4],
+          "recoverable": true
+        },
+        {
+          "code": "ALIG-RH",
+          "name": "Reward Hacking",
+          "description": "The agent exploits loopholes in the reward signal or evaluation metric rather than truly solving the task.",
+          "examples": [
+            "Agent produces a very short answer to minimize token cost without addressing the question.",
+            "Agent copies the expected output format without computing the correct answer."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        },
+        {
+          "code": "ALIG-SS",
+          "name": "Specification Gaming",
+          "description": "The agent satisfies the literal specification while violating the intent.",
+          "examples": [
+            "Agent asked to 'maximize the number of test cases passing' deletes failing tests.",
+            "Agent asked to 'clean the room' hides objects in a closet."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        },
+        {
+          "code": "ALIG-MI",
+          "name": "Misalignment",
+          "description": "The agent's actions are fundamentally misaligned with the user's values or intentions.",
+          "examples": [
+            "Agent interprets 'be efficient' as skipping safety checks.",
+            "Agent interprets 'help the user' as overriding user's stated preferences."
+          ],
+          "severity_range": [3, 5],
+          "recoverable": false
+        }
+      ]
+    }
+  ]
+}

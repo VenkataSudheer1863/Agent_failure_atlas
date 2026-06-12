@@ -1,0 +1,30 @@
+# Qwen3-30B-A3B Local Model Configuration
+# Run via Ollama: ollama pull qwen3:30b-a3b
+
+model_name: "Qwen3-30B"
+paper_name: "Qwen3 30B-A3B (MoE)"
+ollama_model: "qwen3:30b-a3b"
+backend: "ollama"
+base_url: "http://localhost:11434"
+
+# Generation settings
+temperature: 0.0
+max_tokens: 2048
+seed: 42
+timeout_seconds: 180
+
+# Hardware requirements
+min_vram_gb: 18
+min_ram_gb: 24
+disk_space_gb: 18.0
+
+# Source
+hf_repo: "Qwen/Qwen3-30B-A3B"
+hf_url: "https://huggingface.co/Qwen/Qwen3-30B-A3B"
+ollama_url: "https://ollama.com/library/qwen3"
+
+# Notes
+notes: >
+  Qwen3-30B-A3B is a mixture-of-experts model with 30B total parameters
+  but only 3B active parameters per token. Offers strong performance
+  at lower compute cost than dense 30B models.

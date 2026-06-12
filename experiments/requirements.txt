@@ -1,0 +1,35 @@
+# Agent Failure Atlas — Experiment Dependencies
+# Install with: pip install -r experiments/requirements.txt
+
+# Core
+requests>=2.31.0
+pyyaml>=6.0.1
+tqdm>=4.66.1
+python-dotenv>=1.0.0
+
+# Data & Analysis
+pandas>=2.1.0
+numpy>=1.26.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.17.0
+
+# LLM / Model Serving
+ollama>=0.1.6                 # Python client for Ollama local models
+transformers>=4.40.0          # HuggingFace Transformers (alternative to Ollama)
+torch>=2.1.0                  # PyTorch (for HF models)
+accelerate>=0.24.0            # HF Accelerate for multi-GPU
+
+# Notebooks
+jupyter>=1.0.0
+ipykernel>=6.26.0
+nbformat>=5.9.2
+
+# Utilities
+jsonlines>=4.0.0
+rich>=13.6.0                  # Pretty CLI output
+typer>=0.9.0                  # CLI framework

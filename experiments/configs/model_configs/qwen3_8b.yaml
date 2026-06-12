@@ -1,0 +1,30 @@
+# Qwen3-8B Local Model Configuration
+# Run via Ollama: ollama pull qwen3:8b
+
+model_name: "Qwen3-8B"
+paper_name: "Qwen3 8B"
+ollama_model: "qwen3:8b"
+backend: "ollama"
+base_url: "http://localhost:11434"
+
+# Generation settings
+temperature: 0.0
+max_tokens: 2048
+seed: 42
+timeout_seconds: 120
+
+# Hardware requirements
+min_vram_gb: 6
+min_ram_gb: 8
+disk_space_gb: 5.2
+
+# Source
+hf_repo: "Qwen/Qwen3-8B"
+hf_url: "https://huggingface.co/Qwen/Qwen3-8B"
+ollama_url: "https://ollama.com/library/qwen3"
+
+# Notes
+notes: >
+  Qwen3-8B is a strong reasoning model from Alibaba Cloud.
+  Supports extended thinking mode via <think> tokens.
+  Use qwen3:8b-q4_0 for reduced memory usage.

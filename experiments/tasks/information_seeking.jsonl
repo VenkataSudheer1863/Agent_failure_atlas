@@ -1,0 +1,50 @@
+{"id": "INFO-001", "task_type": "information_seeking", "prompt": "What are the main causes of climate change and what evidence supports each cause?", "difficulty": "hard"}
+{"id": "INFO-002", "task_type": "information_seeking", "prompt": "Explain the difference between machine learning and deep learning with examples.", "difficulty": "easy"}
+{"id": "INFO-003", "task_type": "information_seeking", "prompt": "What were the key events leading up to the French Revolution?", "difficulty": "easy"}
+{"id": "INFO-004", "task_type": "information_seeking", "prompt": "Summarize the main findings of recent research on large language models.", "difficulty": "hard"}
+{"id": "INFO-005", "task_type": "information_seeking", "prompt": "What is the current state of quantum computing and when might it reach practical use?", "difficulty": "medium"}
+{"id": "INFO-006", "task_type": "information_seeking", "prompt": "Describe the lifecycle of a star from formation to death.", "difficulty": "easy"}
+{"id": "INFO-007", "task_type": "information_seeking", "prompt": "What are the health effects of ultra-processed foods according to recent research?", "difficulty": "easy"}
+{"id": "INFO-008", "task_type": "information_seeking", "prompt": "Explain how mRNA vaccines work and how they differ from traditional vaccines.", "difficulty": "easy"}
+{"id": "INFO-009", "task_type": "information_seeking", "prompt": "What is the Turing Test and what are its main criticisms?", "difficulty": "hard"}
+{"id": "INFO-010", "task_type": "information_seeking", "prompt": "Describe the history and impact of the internet on society.", "difficulty": "easy"}
+{"id": "INFO-011", "task_type": "information_seeking", "prompt": "What are the main arguments for and against universal basic income?", "difficulty": "hard"}
+{"id": "INFO-012", "task_type": "information_seeking", "prompt": "Explain the concept of neuroplasticity and its implications for learning.", "difficulty": "hard"}
+{"id": "INFO-013", "task_type": "information_seeking", "prompt": "What are the causes and consequences of biodiversity loss?", "difficulty": "hard"}
+{"id": "INFO-014", "task_type": "information_seeking", "prompt": "Describe the main theories about the origin of life on Earth.", "difficulty": "easy"}
+{"id": "INFO-015", "task_type": "information_seeking", "prompt": "What is CRISPR-Cas9 and how is it used in genetic engineering?", "difficulty": "hard"}
+{"id": "INFO-016", "task_type": "information_seeking", "prompt": "Explain the difference between supervised and unsupervised learning.", "difficulty": "medium"}
+{"id": "INFO-017", "task_type": "information_seeking", "prompt": "What are the main principles of agile software development?", "difficulty": "easy"}
+{"id": "INFO-018", "task_type": "information_seeking", "prompt": "Describe the role of the gut microbiome in human health.", "difficulty": "easy"}
+{"id": "INFO-019", "task_type": "information_seeking", "prompt": "What are the main ethical concerns about artificial general intelligence?", "difficulty": "easy"}
+{"id": "INFO-020", "task_type": "information_seeking", "prompt": "Explain how blockchain technology works and its applications.", "difficulty": "easy"}
+{"id": "INFO-021", "task_type": "information_seeking", "prompt": "What is the current scientific consensus on the effectiveness of social media restrictions for teenagers?", "difficulty": "easy"}
+{"id": "INFO-022", "task_type": "information_seeking", "prompt": "Describe the key differences between classical and quantum physics.", "difficulty": "hard"}
+{"id": "INFO-023", "task_type": "information_seeking", "prompt": "What are the main challenges in achieving nuclear fusion power?", "difficulty": "hard"}
+{"id": "INFO-024", "task_type": "information_seeking", "prompt": "Explain the concept of cognitive biases and give five examples.", "difficulty": "easy"}
+{"id": "INFO-025", "task_type": "information_seeking", "prompt": "What is the significance of the Human Genome Project?", "difficulty": "hard"}
+{"id": "INFO-026", "task_type": "information_seeking", "prompt": "Describe how reinforcement learning works using a simple example.", "difficulty": "easy"}
+{"id": "INFO-027", "task_type": "information_seeking", "prompt": "What are the main societal impacts of automation and AI in the workforce?", "difficulty": "hard"}
+{"id": "INFO-028", "task_type": "information_seeking", "prompt": "Explain the concept of herd immunity and how it relates to vaccination.", "difficulty": "hard"}
+{"id": "INFO-029", "task_type": "information_seeking", "prompt": "What are the current leading theories about dark matter?", "difficulty": "hard"}
+{"id": "INFO-030", "task_type": "information_seeking", "prompt": "Describe the history of the internet from ARPANET to the modern web.", "difficulty": "hard"}
+{"id": "INFO-031", "task_type": "information_seeking", "prompt": "What is the difference between correlation and causation? Give an example of each.", "difficulty": "medium"}
+{"id": "INFO-032", "task_type": "information_seeking", "prompt": "Explain how transformer neural networks work at a high level.", "difficulty": "easy"}
+{"id": "INFO-033", "task_type": "information_seeking", "prompt": "What are the main environmental impacts of lithium mining for EV batteries?", "difficulty": "medium"}
+{"id": "INFO-034", "task_type": "information_seeking", "prompt": "Describe the key principles of the scientific method.", "difficulty": "hard"}
+{"id": "INFO-035", "task_type": "information_seeking", "prompt": "What is the significance of the discovery of gravitational waves?", "difficulty": "medium"}
+{"id": "INFO-036", "task_type": "information_seeking", "prompt": "Explain the concept of opportunity cost in economics with examples.", "difficulty": "easy"}
+{"id": "INFO-037", "task_type": "information_seeking", "prompt": "What are the main differences between democracy and autocracy?", "difficulty": "easy"}
+{"id": "INFO-038", "task_type": "information_seeking", "prompt": "Describe how DNA replication works.", "difficulty": "hard"}
+{"id": "INFO-039", "task_type": "information_seeking", "prompt": "What are the key findings from studies on meditation and mindfulness?", "difficulty": "medium"}
+{"id": "INFO-040", "task_type": "information_seeking", "prompt": "Explain the concept of supply chain resilience and why it matters.", "difficulty": "medium"}
+{"id": "INFO-041", "task_type": "information_seeking", "prompt": "What are the main differences between IPv4 and IPv6?", "difficulty": "medium"}
+{"id": "INFO-042", "task_type": "information_seeking", "prompt": "Describe how natural language processing has evolved in the past decade.", "difficulty": "easy"}
+{"id": "INFO-043", "task_type": "information_seeking", "prompt": "What is the anthropic principle and why is it debated?", "difficulty": "easy"}
+{"id": "INFO-044", "task_type": "information_seeking", "prompt": "Explain the concept of emergence in complex systems.", "difficulty": "medium"}
+{"id": "INFO-045", "task_type": "information_seeking", "prompt": "What are the main causes and effects of ocean acidification?", "difficulty": "easy"}
+{"id": "INFO-046", "task_type": "information_seeking", "prompt": "Describe the key principles of object-oriented programming.", "difficulty": "easy"}
+{"id": "INFO-047", "task_type": "information_seeking", "prompt": "What is the current state of research on Alzheimer's disease treatment?", "difficulty": "medium"}
+{"id": "INFO-048", "task_type": "information_seeking", "prompt": "Explain how HTTP/HTTPS protocols work in simple terms.", "difficulty": "easy"}
+{"id": "INFO-049", "task_type": "information_seeking", "prompt": "What are the main economic theories about inflation?", "difficulty": "medium"}
+{"id": "INFO-050", "task_type": "information_seeking", "prompt": "Describe the role of mitochondria in cellular energy production.", "difficulty": "medium"}

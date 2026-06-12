@@ -1,0 +1,23 @@
+{
+  "total": 250,
+  "n_failures": 0,
+  "n_partials": 0,
+  "n_successes": 250,
+  "failure_rate": 0.0,
+  "recovery_rate": 0.0,
+  "mean_severity": 3.0,
+  "category_frequency": {
+    "EXEC": 250
+  },
+  "subcategory_frequency": {
+    "EXEC-PT": 250
+  },
+  "failure_density": 0.0,
+  "per_task_type_failure_rate": {
+    "information_seeking": 0.0,
+    "tool_use": 0.0,
+    "planning": 0.0,
+    "reasoning": 0.0,
+    "multi_agent": 0.0
+  }
+}

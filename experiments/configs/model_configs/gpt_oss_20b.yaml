@@ -1,0 +1,35 @@
+# GPT-OSS-20B Local Model Configuration
+# Served via vLLM on localhost:8000
+
+model_name: "GPT-OSS-20B"
+paper_name: "GPT-OSS 20B (OpenAI-Compatible OSS)"
+backend: "openai_compat"
+base_url: "http://localhost:8000/v1"
+model_id: "gpt-oss-20b"
+
+# Generation settings
+temperature: 0.0
+max_tokens: 2048
+seed: 42
+timeout_seconds: 180
+
+# Hardware requirements
+min_vram_gb: 16
+min_ram_gb: 24
+disk_space_gb: 12.0
+
+# How to serve
+serve_command: >
+  python -m vllm.entrypoints.openai.api_server
+  --model <YOUR_20B_MODEL_PATH>
+  --host 0.0.0.0
+  --port 8000
+  --dtype auto
+
+# Notes
+notes: >
+  GPT-OSS-20B refers to any OpenAI-API-compatible 20B parameter open-source model.
+  Suggested models: Mistral-Small-22B, Phi-3-medium-14B, or similar.
+  Install vLLM: pip install vllm
+  Start server, then set base_url above to your endpoint.
+  The model_id must match the model loaded in vLLM.
