@@ -1,0 +1,102 @@
+# Agent Failure Atlas — Benchmark Configuration
+# All models served via Groq (https://api.groq.com/openai/v1)
+# Model availability verified: 2026-06-15
+
+benchmark:
+  name: "AFA Benchmark v2.0"
+  version: "2.0.0"
+  description: "Cross-model evaluation of agent failure modes — Groq-only execution"
+
+# Single provider: Groq
+provider:
+  name: groq
+  base_url: "https://api.groq.com/openai/v1"
+  note: "Each model uses its own dedicated API key (GROQ_API_KEY_1 … GROQ_API_KEY_6) to maximise per-model rate-limit quota"
+  api_keys:
+    Llama-3.1-8B:      GROQ_API_KEY_1
+    Llama-4-Scout-17B: GROQ_API_KEY_2
+    Qwen3-32B:         GROQ_API_KEY_3
+    Llama-3.3-70B:     GROQ_API_KEY_4
+    GPT-OSS-20B:       GROQ_API_KEY_5
+    GPT-OSS-120B:      GROQ_API_KEY_6
+
+# Models to evaluate (all Groq-hosted, verified 2026-06-15)
+models:
+  - name: "Llama-3.1-8B"
+    enabled: true
+    model_id: "llama-3.1-8b-instant"
+    tier: "small"
+    parameters: "8B"
+
+  - name: "Llama-4-Scout-17B"
+    enabled: true
+    model_id: "meta-llama/llama-4-scout-17b-16e-instruct"
+    tier: "medium"
+    parameters: "17B MoE"
+
+  - name: "Qwen3-32B"
+    enabled: true
+    model_id: "qwen/qwen3-32b"
+    tier: "reasoning"
+    parameters: "32B"
+    note: "Chain-of-thought reasoning model; <think> traces stripped from output"
+
+  - name: "Llama-3.3-70B"
+    enabled: true
+    model_id: "llama-3.3-70b-versatile"
+    tier: "large"
+    parameters: "70B"
+
+  - name: "GPT-OSS-20B"
+    enabled: true
+    model_id: "openai/gpt-oss-20b"
+    tier: "frontier-20B"
+    parameters: "~20B"
+
+  - name: "GPT-OSS-120B"
+    enabled: true
+    model_id: "openai/gpt-oss-120b"
+    tier: "frontier-120B"
+    parameters: "~120B"
+
+# Pilot configuration (subset for validation)
+pilot:
+  models: ["Llama-3.1-8B", "Qwen3-32B", "GPT-OSS-20B"]
+  tasks_per_type: 10
+
+# Task types to include
+task_types:
+  - information_seeking
+  - tool_use
+  - planning
+  - reasoning
+  - multi_agent
+
+# Paths
+tasks_dir: "experiments/tasks"
+output_dir: "experiments/results/raw"
+metrics_dir: "experiments/results/metrics"
+
+# Evaluation settings
+evaluation:
+  temperature: 0.0
+  max_steps: 6
+  seed: 42
+  inter_request_delay_seconds: 2.0
+
+# Judge model
+judge:
+  model_id: "llama-3.1-8b-instant"
+  provider: groq
+  temperature: 0.0
+  max_tokens: 512
+
+# Metrics to compute
+metrics:
+  - failure_rate
+  - recovery_rate
+  - mean_severity
+  - category_frequency
+  - failure_density
+  - per_task_type_failure_rate
+  - mean_latency_seconds

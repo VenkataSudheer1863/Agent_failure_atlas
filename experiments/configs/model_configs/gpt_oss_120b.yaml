@@ -1,0 +1,22 @@
+# GPT-OSS-120B — Groq Configuration (Frontier-120B tier)
+# Provider: Groq (verified available 2026-06-15)
+
+model_name: "GPT-OSS-120B"
+tier: "frontier-120B"
+
+provider:
+  name: groq
+  api_key_env: GROQ_API_KEY_6
+  base_url: "https://api.groq.com/openai/v1"
+  model_id: "openai/gpt-oss-120b"
+
+generation:
+  temperature: 0.0
+  max_tokens: 2048
+  seed: 42
+  timeout_seconds: 180
+
+notes: >
+  GPT-OSS-120B is the largest model available on Groq as of 2026-06-15.
+  At ~120B parameters, expected to show the lowest failure rate in the benchmark.
+  Provides a frontier capability ceiling for cross-model comparison.

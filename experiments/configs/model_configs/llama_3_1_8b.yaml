@@ -1,0 +1,22 @@
+# Llama-3.1-8B — Groq Configuration (Small tier)
+# Provider: Groq (verified available 2026-06-15)
+
+model_name: "Llama-3.1-8B"
+tier: "small"
+
+provider:
+  name: groq
+  api_key_env: GROQ_API_KEY_1
+  base_url: "https://api.groq.com/openai/v1"
+  model_id: "llama-3.1-8b-instant"
+
+generation:
+  temperature: 0.0
+  max_tokens: 2048
+  seed: 42
+  timeout_seconds: 30
+
+notes: >
+  Llama 3.1 8B (instant) serves as the small-tier model on Groq.
+  Ultra-low-latency inference via Groq LPU.
+  Expected to show higher failure rates due to smaller parameter count.

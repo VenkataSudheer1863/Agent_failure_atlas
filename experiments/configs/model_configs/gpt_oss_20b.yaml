@@ -1,0 +1,22 @@
+# GPT-OSS-20B — Groq Configuration (Frontier-20B tier)
+# Provider: Groq (verified available 2026-06-15)
+
+model_name: "GPT-OSS-20B"
+tier: "frontier-20B"
+
+provider:
+  name: groq
+  api_key_env: GROQ_API_KEY_5
+  base_url: "https://api.groq.com/openai/v1"
+  model_id: "openai/gpt-oss-20b"
+
+generation:
+  temperature: 0.0
+  max_tokens: 2048
+  seed: 42
+  timeout_seconds: 120
+
+notes: >
+  GPT-OSS-20B is available directly on Groq as openai/gpt-oss-20b.
+  Serves as the frontier-20B tier in the AFA benchmark.
+  Served exclusively via Groq. Requires only GROQ_API_KEY_5.
