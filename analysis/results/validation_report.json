@@ -1,0 +1,42 @@
+{
+  "total_records": 450,
+  "total_errors": 0,
+  "models": [
+    {
+      "file": "experiments/results/raw/Llama-3.1-8B/trajectories.jsonl",
+      "n_records": 75,
+      "n_errors": 0,
+      "errors": []
+    },
+    {
+      "file": "experiments/results/raw/Llama-4-Scout-17B/trajectories.jsonl",
+      "n_records": 75,
+      "n_errors": 0,
+      "errors": []
+    },
+    {
+      "file": "experiments/results/raw/Qwen3-32B/trajectories.jsonl",
+      "n_records": 75,
+      "n_errors": 0,
+      "errors": []
+    },
+    {
+      "file": "experiments/results/raw/Llama-3.3-70B/trajectories.jsonl",
+      "n_records": 75,
+      "n_errors": 0,
+      "errors": []
+    },
+    {
+      "file": "experiments/results/raw/GPT-OSS-20B/trajectories.jsonl",
+      "n_records": 75,
+      "n_errors": 0,
+      "errors": []
+    },
+    {
+      "file": "experiments/results/raw/GPT-OSS-120B/trajectories.jsonl",
+      "n_records": 75,
+      "n_errors": 0,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "total": 75,
+  "n_failures": 45,
+  "n_partials": 14,
+  "n_successes": 16,
+  "failure_rate": 0.6,
+  "recovery_rate": 0.1695,
+  "mean_severity": 3.102,
+  "category_frequency": {
+    "REAS": 16,
+    "PLAN": 18,
+    "MEM": 1,
+    "EXEC": 16,
+    "TOOL": 5,
+    "ALIG": 1,
+    "COOR": 2
+  },
+  "subcategory_frequency": {
+    "REAS-II": 16,
+    "EXEC-IL": 16,
+    "PLAN-WO": 15,
+    "TOOL-PF": 5,
+    "PLAN-MS": 3,
+    "COOR-CB": 2,
+    "MEM-CL": 1,
+    "ALIG-GD": 1
+  },
+  "failure_density": 3.71,
+  "per_task_type_failure_rate": {
+    "information_seeking": 0.2667,
+    "tool_use": 0.7333,
+    "planning": 0.7333,
+    "reasoning": 0.5333,
+    "multi_agent": 0.7333
+  },
+  "mean_latency_seconds": 19.33
+}

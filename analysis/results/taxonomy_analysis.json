@@ -1,0 +1,43 @@
+{
+  "total_records": 450,
+  "total_failures": 283,
+  "overall_failure_rate": 0.6289,
+  "category_counts": {
+    "ALIG": 6,
+    "PLAN": 109,
+    "TOOL": 33,
+    "EXEC": 76,
+    "REAS": 50,
+    "COOR": 8,
+    "MEM": 1
+  },
+  "category_rates": {
+    "PLAN": 0.3852,
+    "REAS": 0.1767,
+    "TOOL": 0.1166,
+    "MEM": 0.0035,
+    "EXEC": 0.2686,
+    "COOR": 0.0283,
+    "SAFE": 0.0,
+    "ALIG": 0.0212
+  },
+  "top_subcategories": {
+    "PLAN-WO": 86,
+    "EXEC-IL": 70,
+    "REAS-II": 50,
+    "TOOL-PF": 33,
+    "PLAN-MS": 17,
+    "COOR-CB": 8,
+    "ALIG-GD": 6,
+    "PLAN-PL": 6,
+    "EXEC-PT": 6,
+    "MEM-CL": 1
+  },
+  "failures_by_task_type": {
+    "information_seeking": 37,
+    "tool_use": 67,
+    "planning": 68,
+    "reasoning": 50,
+    "multi_agent": 61
+  }
+}

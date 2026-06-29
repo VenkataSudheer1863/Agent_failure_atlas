@@ -1,0 +1,7 @@
+model,total,n_failures,n_partials,n_successes,failure_rate,recovery_rate,mean_severity,failure_density,mean_latency_seconds
+GPT-OSS-120B,75,40,26,9,0.5333,0.3788,3.409,3.45,71.86
+GPT-OSS-20B,75,46,25,4,0.6133,0.2817,3.507,3.96,63.58
+Llama-3.1-8B,75,59,2,14,0.7867,0.0984,3.049,2.95,53.12
+Llama-3.3-70B,75,45,14,16,0.6,0.1695,3.102,3.71,19.33
+Llama-4-Scout-17B,75,54,11,10,0.72,0.1538,3.154,4.07,17.09
+Qwen3-32B,75,39,23,13,0.52,0.3226,3.206,4.97,81.55

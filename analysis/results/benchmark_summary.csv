@@ -1,0 +1,7 @@
+model,tier,total,n_failures,n_partials,n_successes,failure_rate,partial_rate,success_rate,recovery_rate,mean_severity,mean_latency,failure_density
+GPT-OSS-120B,frontier-120B,75,40,26,9,0.5333,0.3467,0.12,0.3788,3.409,71.86,3.45
+GPT-OSS-20B,frontier-20B,75,46,25,4,0.6133,0.3333,0.0533,0.2817,3.507,63.58,3.96
+Llama-3.1-8B,small,75,59,2,14,0.7867,0.0267,0.1867,0.0984,3.049,53.12,2.95
+Llama-3.3-70B,large,75,45,14,16,0.6,0.1867,0.2133,0.1695,3.102,19.33,3.71
+Llama-4-Scout-17B,medium,75,54,11,10,0.72,0.1467,0.1333,0.1538,3.154,17.09,4.07
+Qwen3-32B,reasoning,75,39,23,13,0.52,0.3067,0.1733,0.3226,3.206,81.55,4.97

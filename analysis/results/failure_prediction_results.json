@@ -1,0 +1,42 @@
+{
+  "auc_by_steps": {
+    "1": {
+      "lr_auc_mean": 0.647,
+      "lr_auc_std": 0.0429,
+      "rf_auc_mean": 0.6632,
+      "rf_auc_std": 0.0299
+    },
+    "2": {
+      "lr_auc_mean": 0.6477,
+      "lr_auc_std": 0.0406,
+      "rf_auc_mean": 0.6721,
+      "rf_auc_std": 0.0252
+    },
+    "3": {
+      "lr_auc_mean": 0.6496,
+      "lr_auc_std": 0.0365,
+      "rf_auc_mean": 0.6828,
+      "rf_auc_std": 0.0165
+    },
+    "5": {
+      "lr_auc_mean": 0.6582,
+      "lr_auc_std": 0.0406,
+      "rf_auc_mean": 0.6576,
+      "rf_auc_std": 0.0223
+    }
+  },
+  "feature_importances": {
+    "model_id": 0.2663,
+    "task_type_id": 0.2594,
+    "total_text_len": 0.1715,
+    "error_signal": 0.0815,
+    "loop_signal": 0.0723,
+    "n_steps_early": 0.055,
+    "uncertainty_signal": 0.0496,
+    "tool_failure_signal": 0.0315,
+    "hallucination_signal": 0.0129,
+    "abandon_signal": 0.0,
+    "n_tool_calls_early": 0.0,
+    "has_tool_failure": 0.0
+  }
+}

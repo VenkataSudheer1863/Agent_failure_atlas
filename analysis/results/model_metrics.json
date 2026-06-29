@@ -1,0 +1,241 @@
+{
+  "GPT-OSS-120B": {
+    "model": "GPT-OSS-120B",
+    "tier": "frontier-120B",
+    "total": 75,
+    "n_failures": 40,
+    "n_partials": 26,
+    "n_successes": 9,
+    "failure_rate": 0.5333,
+    "partial_rate": 0.3467,
+    "success_rate": 0.12,
+    "recovery_rate": 0.3788,
+    "mean_severity": 3.409,
+    "mean_latency": 71.86,
+    "failure_density": 3.45,
+    "category_frequency": {
+      "REAS": 20,
+      "ALIG": 1,
+      "PLAN": 16,
+      "TOOL": 16,
+      "EXEC": 5,
+      "COOR": 8
+    },
+    "subcategory_frequency": {
+      "REAS-II": 20,
+      "TOOL-PF": 16,
+      "PLAN-WO": 15,
+      "COOR-CB": 8,
+      "EXEC-IL": 5,
+      "ALIG-GD": 1,
+      "PLAN-PL": 1
+    },
+    "per_task_type_failure_rate": {
+      "information_seeking": 0.2,
+      "tool_use": 0.8667,
+      "planning": 0.5333,
+      "reasoning": 0.5333,
+      "multi_agent": 0.5333
+    }
+  },
+  "GPT-OSS-20B": {
+    "model": "GPT-OSS-20B",
+    "tier": "frontier-20B",
+    "total": 75,
+    "n_failures": 46,
+    "n_partials": 25,
+    "n_successes": 4,
+    "failure_rate": 0.6133,
+    "partial_rate": 0.3333,
+    "success_rate": 0.0533,
+    "recovery_rate": 0.2817,
+    "mean_severity": 3.507,
+    "mean_latency": 63.58,
+    "failure_density": 3.96,
+    "category_frequency": {
+      "REAS": 21,
+      "ALIG": 1,
+      "PLAN": 17,
+      "EXEC": 8,
+      "TOOL": 19,
+      "COOR": 5
+    },
+    "subcategory_frequency": {
+      "REAS-II": 21,
+      "TOOL-PF": 19,
+      "PLAN-WO": 15,
+      "EXEC-IL": 6,
+      "COOR-CB": 5,
+      "EXEC-PT": 2,
+      "ALIG-GD": 1,
+      "PLAN-MS": 1,
+      "PLAN-PL": 1
+    },
+    "per_task_type_failure_rate": {
+      "information_seeking": 0.5333,
+      "tool_use": 0.8667,
+      "planning": 0.8,
+      "reasoning": 0.2667,
+      "multi_agent": 0.6
+    }
+  },
+  "Llama-3.1-8B": {
+    "model": "Llama-3.1-8B",
+    "tier": "small",
+    "total": 75,
+    "n_failures": 59,
+    "n_partials": 2,
+    "n_successes": 14,
+    "failure_rate": 0.7867,
+    "partial_rate": 0.0267,
+    "success_rate": 0.1867,
+    "recovery_rate": 0.0984,
+    "mean_severity": 3.049,
+    "mean_latency": 53.12,
+    "failure_density": 2.95,
+    "category_frequency": {
+      "EXEC": 15,
+      "PLAN": 28,
+      "REAS": 14,
+      "COOR": 3,
+      "ALIG": 1
+    },
+    "subcategory_frequency": {
+      "PLAN-WO": 22,
+      "EXEC-IL": 14,
+      "REAS-II": 14,
+      "PLAN-MS": 4,
+      "COOR-CB": 3,
+      "PLAN-PL": 2,
+      "ALIG-GD": 1,
+      "EXEC-PT": 1
+    },
+    "per_task_type_failure_rate": {
+      "information_seeking": 0.6667,
+      "tool_use": 0.8667,
+      "planning": 0.7333,
+      "reasoning": 0.8667,
+      "multi_agent": 0.8
+    }
+  },
+  "Llama-3.3-70B": {
+    "model": "Llama-3.3-70B",
+    "tier": "large",
+    "total": 75,
+    "n_failures": 45,
+    "n_partials": 14,
+    "n_successes": 16,
+    "failure_rate": 0.6,
+    "partial_rate": 0.1867,
+    "success_rate": 0.2133,
+    "recovery_rate": 0.1695,
+    "mean_severity": 3.102,
+    "mean_latency": 19.33,
+    "failure_density": 3.71,
+    "category_frequency": {
+      "REAS": 16,
+      "PLAN": 18,
+      "MEM": 1,
+      "EXEC": 16,
+      "TOOL": 5,
+      "ALIG": 1,
+      "COOR": 2
+    },
+    "subcategory_frequency": {
+      "REAS-II": 16,
+      "EXEC-IL": 16,
+      "PLAN-WO": 15,
+      "TOOL-PF": 5,
+      "PLAN-MS": 3,
+      "COOR-CB": 2,
+      "MEM-CL": 1,
+      "ALIG-GD": 1
+    },
+    "per_task_type_failure_rate": {
+      "information_seeking": 0.2667,
+      "tool_use": 0.7333,
+      "planning": 0.7333,
+      "reasoning": 0.5333,
+      "multi_agent": 0.7333
+    }
+  },
+  "Llama-4-Scout-17B": {
+    "model": "Llama-4-Scout-17B",
+    "tier": "medium",
+    "total": 75,
+    "n_failures": 54,
+    "n_partials": 11,
+    "n_successes": 10,
+    "failure_rate": 0.72,
+    "partial_rate": 0.1467,
+    "success_rate": 0.1333,
+    "recovery_rate": 0.1538,
+    "mean_severity": 3.154,
+    "mean_latency": 17.09,
+    "failure_density": 4.07,
+    "category_frequency": {
+      "EXEC": 20,
+      "PLAN": 26,
+      "REAS": 14,
+      "TOOL": 3,
+      "COOR": 2
+    },
+    "subcategory_frequency": {
+      "PLAN-WO": 20,
+      "EXEC-IL": 18,
+      "REAS-II": 14,
+      "PLAN-MS": 6,
+      "TOOL-PF": 3,
+      "EXEC-PT": 2,
+      "COOR-CB": 2
+    },
+    "per_task_type_failure_rate": {
+      "information_seeking": 0.5333,
+      "tool_use": 0.6667,
+      "planning": 1.0,
+      "reasoning": 0.6667,
+      "multi_agent": 0.7333
+    }
+  },
+  "Qwen3-32B": {
+    "model": "Qwen3-32B",
+    "tier": "reasoning",
+    "total": 75,
+    "n_failures": 39,
+    "n_partials": 23,
+    "n_successes": 13,
+    "failure_rate": 0.52,
+    "partial_rate": 0.3067,
+    "success_rate": 0.1733,
+    "recovery_rate": 0.3226,
+    "mean_severity": 3.206,
+    "mean_latency": 81.55,
+    "failure_density": 4.97,
+    "category_frequency": {
+      "REAS": 18,
+      "PLAN": 21,
+      "EXEC": 12,
+      "TOOL": 4,
+      "ALIG": 2,
+      "COOR": 6
+    },
+    "subcategory_frequency": {
+      "REAS-II": 18,
+      "PLAN-WO": 15,
+      "EXEC-IL": 11,
+      "COOR-CB": 6,
+      "TOOL-PF": 4,
+      "PLAN-MS": 3,
+      "PLAN-PL": 2,
+      "ALIG-GD": 2,
+      "EXEC-PT": 1
+    },
+    "per_task_type_failure_rate": {
+      "information_seeking": 0.2667,
+      "tool_use": 0.4667,
+      "planning": 0.7333,
+      "reasoning": 0.4667,
+      "multi_agent": 0.6667
+    }
+  }
+}
